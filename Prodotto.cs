@@ -54,6 +54,11 @@ namespace csharp_op_shop
         {
             return fPrezzo * (1 + dIva);
         }
+        public string NomeEsteso()
+        {
+            //return String.Format("{0}-{1}", iCodicePr, sNome);
+            return iCodicePr.ToString() + "-" + sNome;
+        }
         public Prodotto(string nome, string desc, float prezzo, double iva)
         {
             myRand = new Random();
